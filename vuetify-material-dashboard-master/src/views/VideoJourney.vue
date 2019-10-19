@@ -248,7 +248,7 @@ export default {
 }
 
 .vjs-custom-skin > .video-js .vjs-control-bar .vjs-resolution-button .vjs-menu {
-  /*order: 4;*/
+  order: 4;
 }
 
 /*排序顺序*/

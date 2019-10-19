@@ -44,5 +44,10 @@ export default [
     path: '/video-journey',
     name: 'VideoJourney',
     view: 'VideoJourney'
+  },
+  {
+    path: '/image-journey',
+    name: 'ImageJourney',
+    view: 'Image'
   }
 ]

@@ -92,9 +92,9 @@
           text: 'Dashboard'
         },
         {
-          to: '/user-profile',
+          to: '/image-journey',
           icon: 'mdi-account',
-          text: 'User Profile'
+          text: 'Image Journey'
         },
         {
           to: '/video-journey',
