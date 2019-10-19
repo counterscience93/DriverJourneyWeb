@@ -28,51 +28,51 @@
 
 <script>
 // require styles
-import "video.js/dist/video-js.css";
+import 'video.js/dist/video-js.css';
 
-import { videoPlayer } from "vue-video-player";
+import { videoPlayer } from 'vue-video-player';
 
 export default {
   data() {
     return {
-      textField: "",
+      textField: '',
       dialog: false,
       playerOptions: {
         // videojs options
         muted: true,
-        language: "en",
+        language: 'en',
         playbackRates: [0.7, 1.0, 1.5, 2.0],
         sources: [
           {
-            type: "video/mp4",
+            type: 'video/mp4',
             src:
-              "https://s3-hcm-r1.longvan.net/safety.drive.storage/352142102458936/video/2019-10-15.avi"
+              'https://s3-hcm-r1.longvan.net/safety.drive.storage/352142102458936/video/2019-10-15.avi'
           }
         ]
       },
       headers: [
-        { text: "Id", value: "id" },
+        { text: 'Id', value: 'id' },
         {
-          text: "Device IMEI",
-          align: "left",
+          text: 'Device IMEI',
+          align: 'left',
           sortable: false,
-          value: "imei"
+          value: 'imei'
         },
-        { text: "Url", value: "url" },
-        { text: "Actions", value: "action", sortable: false }
+        { text: 'Url', value: 'url' },
+        { text: 'Actions', value: 'action', sortable: false }
       ],
       desserts: [
         {
-          id: "1",
-          imei: "352142102458936",
+          id: '1',
+          imei: '352142102458936',
           url:
-            "https://s3-hcm-r1.longvan.net/safety.drive.storage/352142102458936/video/2019-10-15.avi"
+            'https://s3-hcm-r1.longvan.net/safety.drive.storage/352142102458936/video/2019-10-15.avi'
         },
         {
-          id: "2",
-          imei: "352142102458936",
+          id: '2',
+          imei: '352142102458936',
           url:
-            "https://s3-hcm-r1.longvan.net/safety.drive.storage/352142102458936/video/2019-10-15.avi"
+            'https://s3-hcm-r1.longvan.net/safety.drive.storage/352142102458936/video/2019-10-15.avi'
         }
       ]
     };
@@ -81,7 +81,7 @@ export default {
     videoPlayer
   },
   created() {
-    console.log("This Vue is created");
+    console.log('This Vue is created');
   },
   methods: {
     onChangeTextField() {
@@ -90,7 +90,7 @@ export default {
     editItem(url) {
       console.log(url);
       this.dialog = true;
-    },
+    }
   }
 };
 </script>
@@ -98,8 +98,8 @@ export default {
 <style scoped>
 .vjs-custom-skin > .video-js {
   width: 100%;
-  font-family: "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI",
-    "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', 'Segoe UI',
+    'Microsoft YaHei', '微软雅黑', sans-serif;
 }
 
 .vjs-custom-skin > .video-js .vjs-menu-button-inline.vjs-slider-active,
@@ -219,8 +219,8 @@ export default {
   padding: 0;
   line-height: 2em;
   font-size: 1.1em;
-  font-family: "PingFang SC", "Helvetica Neue", "Hiragino Sans GB", "Segoe UI",
-    "Microsoft YaHei", "微软雅黑", sans-serif;
+  font-family: 'PingFang SC', 'Helvetica Neue', 'Hiragino Sans GB', 'Segoe UI',
+    'Microsoft YaHei', '微软雅黑', sans-serif;
 }
 
 .vjs-custom-skin > .video-js .vjs-time-tooltip,

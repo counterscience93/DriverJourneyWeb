@@ -50,16 +50,16 @@
 
 <script>
 // Utilities
-import { mapMutations } from "vuex";
+import { mapMutations } from 'vuex';
 
 export default {
   data: () => ({
     notifications: [
-      "Mike, John responded to your email",
-      "You have 5 new tasks",
+      'Mike, John responded to your email',
+      'You have 5 new tasks',
       "You're now a friend with Andrew",
-      "Another Notification",
-      "Another One"
+      'Another Notification',
+      'Another One'
     ],
     title: null,
     responsive: false
@@ -73,14 +73,14 @@ export default {
 
   mounted() {
     this.onResponsiveInverted();
-    window.addEventListener("resize", this.onResponsiveInverted);
+    window.addEventListener('resize', this.onResponsiveInverted);
   },
   beforeDestroy() {
-    window.removeEventListener("resize", this.onResponsiveInverted);
+    window.removeEventListener('resize', this.onResponsiveInverted);
   },
 
   methods: {
-    ...mapMutations("app", ["setDrawer", "toggleDrawer"]),
+    ...mapMutations('app', ['setDrawer', 'toggleDrawer']),
     onClick() {
       this.setDrawer(!this.$store.state.app.drawer);
     },
