@@ -5,7 +5,7 @@ export default {
       GET_VIDEO: '/videos/getall'
     },
     image: {
-      GET_IMAGES: '/images/getall',
+      GET_IMAGES: '/images/getall'
     }
   }
 };

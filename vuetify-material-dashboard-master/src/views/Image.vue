@@ -1,11 +1,7 @@
 <template>
   <div>
     <div v-if="!images || images.length === 0">
-      <v-progress-circular
-      :width="4"
-      color="green"
-      indeterminate
-    ></v-progress-circular>
+      <v-progress-circular :width="4" color="green" indeterminate></v-progress-circular>
     </div>
     <v-container fluid grid-list-xl pb-0 grid-list-lg grid-list-md grid-list-xs v-if="images">
       <v-layout row wrap>
@@ -31,7 +27,7 @@
 </template>
 
 <script>
-import { ImageService } from "../service/service-provider";
+import { ImageService } from '../service/service-provider';
 
 export default {
   data() {
@@ -44,7 +40,7 @@ export default {
   },
   methods: {
     getDateTimeFromUrl(url) {
-      let index = url.indexOf(".jpg");
+      let index = url.indexOf('.jpg');
       return url.substring(index - 16, index);
     },
     loadImages() {
